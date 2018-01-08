@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Alber Sultan</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="{% static 'personal/css/carousel.css' %}" type = "text/css"/>
+	
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+</head>
+<body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#section1">Projects <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#section3">About me</a>
+            </li>
+          </ul>
+        
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <img class="first-slide" src="{% static 'personal/back2.jpg' %}" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Alber Sultan</h1>
+                <p>A self-driven, passionate and motivated Computer Science student.</p> 
+                <a href="https://www.facebook.com/alber.sultan"><img src="{% static 'personal/faceee.png' %}" class="responsive-img" height="46" width="46"></a>
+                <a href="https://www.linkedin.com/in/alber-sultan-10512514a/"><img src="{% static 'personal/link.png' %}" class="responsive-img" height="44 " width="45"></a>
+                <a href="mailto:asultan@gmail.com"><img src="{% static 'personal/gmail.png' %}" class="responsive-img" height="51 " width="43"></a>
+                
+              </div>
+            </div>
+          </div>
+    
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="{% static 'personal/swag.jpg' %}"  alt="Generic placeholder image" width="140" height="140">
+            <h2>Projects</h2>
+            <p>Contains a lot of the projects that I have done for various classes along with other side projects and cool little scripts I've written. All can be found
+            on my GitHub.</p>
+            <p><a class="btn btn-secondary" href="https://github.com/sultvn17" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="{% static 'personal/file.jpg' %}"  alt="Generic placeholder image" width="140" height="140">
+            <h2>Resume</h2>
+            <p>Link to my up to date resume.</p>
+            <p><a class="btn btn-secondary" href="{% static 'personal/Alber_Sultan_Resume.pdf' %}" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="{% static 'personal/me.jpeg' %}"  alt="Generic placeholder image" width="140" height="140">
+            <h2>About me</h2>
+            <p>Who Am I? My Goals? Do I Have a Life? Things I'm Passionate about? Interests? Find out.</p>
+            <p><a class="btn btn-secondary" href="#section3" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+          <div class="col-md-7" id="section1">
+        <div class="row featurette" >
+            <h2 class="featurette-heading">Projects. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead"> All of the source code I have written can be found on my <a href="https://github.com/sultvn17">GitHub</a>.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="{% static 'personal/git.png' %}" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" id='section2'>
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Find my resume <a href="{% static 'personal/Alber_Sultan_Resume.pdf' %}">here</a></p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="{% static 'personal/resume.png' %}" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" id='section3'>
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Everything you should know. <span class="text-muted">Alber Sultan.</span></h2>
+            <p class="lead">I am currently a junior at the University of Rhode Island pursuing a Bachelors of Science in Computer Science. As of right now my main focus is to find an internship in software engineering in which I gain vital experience in achieving my main goal to become a software engineer. Some of my interests include Advanced Python, machine learning and Big Data. Outside of school I take interest in a vast number of things, I enjoy keeping up with sports (basketball, soccer, cricket), going to the gym, staying in touch with music and rap culture, competitive gaming and leanring more on topics that will benefit me moving forward in my professional life. When it comes to things I’m passionate about I always strive to be the best at what I do, whether it be in school related work or my interests outside of my academia.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="{% static 'personal/about.jpg' %}" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+       
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'personal/js/holder.min.js' %}"></script>
+  </body>
+</html>
