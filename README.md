@@ -1,3 +1,2 @@
-# Personal-Website
-alber-sultan.com
+# alber-sultan.com
 Personal website written in python using Django
